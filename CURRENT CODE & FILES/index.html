@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TaskSwap</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                'Inter', 'Manrope', 'ui-sans-serif','system-ui','-apple-system',
+                'Segoe UI','Roboto','Arial'
+              ]
+            },
+            boxShadow: {
+              premium: '0 0 0 2px rgba(250,204,21,0.9), 0 0 32px rgba(250,204,21,0.45)',
+              premiumSoft: '0 0 0 1px rgba(250,204,21,0.8), 0 0 20px rgba(250,204,21,0.35)'
+            }
+          }
+        }
+      }
+    </script>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      html, body { overflow-x: hidden; }
+      body { background: #0b0f19; }
+    </style>
+  </head>
+
+  <body class="bg-zinc-900 text-zinc-100 font-sans">
+    <div id="root"></div>
+
+    <script type="text/babel" src="./src/ui.js"></script>
+
+    <script type="text/babel" src="./src/pages/Overview.js"></script>
+    <script type="text/babel" src="./src/pages/StarterTasks.js"></script>
+    <script type="text/babel" src="./src/pages/Marketplace.js"></script>
+    <script type="text/babel" src="./src/pages/PostTask.js"></script>
+    <script type="text/babel" src="./src/pages/Profile.js"></script>
+    <script type="text/babel" src="./src/pages/Community.js"></script>
+    <script type="text/babel" src="./src/pages/Safety.js"></script>
+    <script type="text/babel" src="./src/pages/FAQ.js"></script>
+    <script type="text/babel" src="./src/pages/Premium.js"></script>
+
+    <script type="text/babel" src="./src/App.js"></script>
+    <script type="text/babel" src="./src/main.js"></script>
+  </body>
+</html>
